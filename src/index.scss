@@ -1,0 +1,70 @@
+@import './vars.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* hanken-grotesk-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Hanken Grotesk';
+  font-style: normal;
+  font-weight: 500;
+  src: url('./fonts/hanken-grotesk-v5-latin-500.eot'); /* IE9 Compat Modes */
+  src: url('./fonts/hanken-grotesk-v5-latin-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./fonts/hanken-grotesk-v5-latin-500.woff2') format('woff2'), /* Super Modern Browsers */
+       url('./fonts/hanken-grotesk-v5-latin-500.woff') format('woff'), /* Modern Browsers */
+       url('./fonts/hanken-grotesk-v5-latin-500.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('./fonts/hanken-grotesk-v5-latin-500.svg#HankenGrotesk') format('svg'); /* Legacy iOS */
+}
+/* hanken-grotesk-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Hanken Grotesk';
+  font-style: normal;
+  font-weight: 700;
+  src: url('./fonts/hanken-grotesk-v5-latin-700.eot'); /* IE9 Compat Modes */
+  src: url('./fonts/hanken-grotesk-v5-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./fonts/hanken-grotesk-v5-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('./fonts/hanken-grotesk-v5-latin-700.woff') format('woff'), /* Modern Browsers */
+       url('./fonts/hanken-grotesk-v5-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('./fonts/hanken-grotesk-v5-latin-700.svg#HankenGrotesk') format('svg'); /* Legacy iOS */
+}
+/* hanken-grotesk-800 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Hanken Grotesk';
+  font-style: normal;
+  font-weight: 800;
+  src: url('./fonts/hanken-grotesk-v5-latin-800.eot'); /* IE9 Compat Modes */
+  src: url('./fonts/hanken-grotesk-v5-latin-800.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./fonts/hanken-grotesk-v5-latin-800.woff2') format('woff2'), /* Super Modern Browsers */
+       url('./fonts/hanken-grotesk-v5-latin-800.woff') format('woff'), /* Modern Browsers */
+       url('./fonts/hanken-grotesk-v5-latin-800.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('./fonts/hanken-grotesk-v5-latin-800.svg#HankenGrotesk') format('svg'); /* Legacy iOS */
+}
+
+body {
+  font-size: $fontSize;
+  font-family: 'Hanken Grotesk';
+}
+
+button {
+  font-family: 'Hanken Grotesk';
+}
+
+.component {
+  display: flex; 
+  flex-direction: column;
+}
+
+@media (min-width: 900px) {
+  .component {
+    flex-direction: row;
+    border-radius: 1rem;
+    box-shadow: 4px 6px 8px 0px rgba(34, 60, 80, 0.2);
+    width: 50rem;
+    overflow: hidden;
+  }
+}
